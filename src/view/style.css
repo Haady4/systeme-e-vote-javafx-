@@ -1,0 +1,219 @@
+.root {
+    -fx-font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    -fx-background-color: #f8fafc;
+}
+
+.label {
+    -fx-text-fill: #1e293b;
+}
+
+.title-label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0f172a;
+}
+
+.subtitle-label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #64748b;
+}
+
+/* En-tête de page : le bandeau du haut avec titre + bouton de déconnexion */
+.header-bar {
+    -fx-background-color: #ffffff;
+    -fx-padding: 16px 20px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(15,23,42,0.08), 8, 0, 0, 2);
+}
+
+/* Carte/panneau générique : pour englober une section (liste + actions) */
+.card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 12px;
+    -fx-padding: 18px;
+    -fx-effect: dropshadow(gaussian, rgba(15,23,42,0.06), 10, 0, 0, 3);
+}
+
+.section-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #334155;
+}
+
+.text-field, .password-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px 14px;
+    -fx-font-size: 13px;
+    -fx-text-fill: #334155;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #2563eb;
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(37,99,235,0.15), 6, 0, 0, 0);
+}
+
+.button {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(37,99,235,0.25), 6, 0, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+.button:pressed {
+    -fx-background-color: #1e40af;
+    -fx-effect: none;
+}
+
+.button:disabled {
+    -fx-background-color: #cbd5e1;
+    -fx-effect: none;
+    -fx-cursor: default;
+}
+
+.button-danger {
+    -fx-background-color: #ef4444;
+    -fx-effect: dropshadow(gaussian, rgba(239,68,68,0.25), 6, 0, 0, 2);
+}
+
+.button-danger:hover {
+    -fx-background-color: #dc2626;
+}
+
+.button-success {
+    -fx-background-color: #10b981;
+    -fx-effect: dropshadow(gaussian, rgba(16,185,129,0.25), 6, 0, 0, 2);
+}
+
+.button-success:hover {
+    -fx-background-color: #059669;
+}
+
+/* Bouton discret (ex: "< Retour") : contour seulement, pas de fond plein */
+.button-outline {
+    -fx-background-color: transparent;
+    -fx-text-fill: #475569;
+    -fx-border-color: #cbd5e1;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-effect: none;
+}
+
+.button-outline:hover {
+    -fx-background-color: #f1f5f9;
+    -fx-border-color: #94a3b8;
+}
+
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: transparent;
+    -fx-background-radius: 8px;
+    -fx-padding: 4px;
+}
+
+.list-cell {
+    -fx-padding: 12px 14px;
+    -fx-background-radius: 6px;
+    -fx-background-insets: 2px 4px;
+    -fx-text-fill: #334155;
+    -fx-font-size: 13px;
+}
+
+.list-cell:empty {
+    -fx-background-color: transparent;
+}
+
+.list-cell:filled:even {
+    -fx-background-color: #f8fafc;
+}
+
+.list-cell:filled:odd {
+    -fx-background-color: #ffffff;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #f1f5f9;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #eff6ff;
+    -fx-text-fill: #2563eb;
+    -fx-font-weight: bold;
+    -fx-background-insets: 2px 4px;
+}
+
+/* Étiquette de statut (ex: OUVERTE / FERMEE) affichée dans une cellule */
+.status-badge-open {
+    -fx-background-color: #dcfce7;
+    -fx-text-fill: #166534;
+    -fx-background-radius: 20px;
+    -fx-padding: 3px 10px;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.status-badge-closed {
+    -fx-background-color: #fee2e2;
+    -fx-text-fill: #991b1b;
+    -fx-background-radius: 20px;
+    -fx-padding: 3px 10px;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.chart-bar {
+    -fx-bar-fill: #2563eb;
+    -fx-background-radius: 4px 4px 0 0;
+}
+
+.chart-plot-background {
+    -fx-background-color: #ffffff;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+}
+
+.axis {
+    -fx-tick-label-fill: #64748b;
+    -fx-font-size: 11px;
+}
+
+.axis-label {
+    -fx-text-fill: #334155;
+    -fx-font-weight: bold;
+}
+
+/* Message d'erreur / alerte discrète sous un formulaire */
+.error-label {
+    -fx-text-fill: #dc2626;
+    -fx-font-size: 12px;
+}
+
+/* Scrollbar plus discrète que le style par défaut de JavaFX */
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #cbd5e1;
+    -fx-background-radius: 6px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #94a3b8;
+}
