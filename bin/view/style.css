@@ -1,0 +1,119 @@
+.root {
+    -fx-font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    -fx-background-color: #f8fafc;
+}
+
+.label {
+    -fx-text-fill: #1e293b;
+}
+
+.title-label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0f172a;
+}
+
+.subtitle-label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #64748b;
+}
+
+.text-field, .password-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px 14px;
+    -fx-font-size: 13px;
+    -fx-text-fill: #334155;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #2563eb;
+    -fx-background-color: #ffffff;
+}
+
+.button {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+.button:pressed {
+    -fx-background-color: #1e40af;
+}
+
+.button-danger {
+    -fx-background-color: #ef4444;
+}
+
+.button-danger:hover {
+    -fx-background-color: #dc2626;
+}
+
+.button-success {
+    -fx-background-color: #10b981;
+}
+
+.button-success:hover {
+    -fx-background-color: #059669;
+}
+
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 5px;
+}
+
+.list-cell {
+    -fx-padding: 10px 14px;
+    -fx-background-radius: 6px;
+    -fx-text-fill: #334155;
+    -fx-font-size: 13px;
+}
+
+.list-cell:empty {
+    -fx-background-color: transparent;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #f1f5f9;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #eff6ff;
+    -fx-text-fill: #2563eb;
+    -fx-font-weight: bold;
+}
+
+.chart-bar {
+    -fx-bar-fill: #2563eb;
+    -fx-background-radius: 4px 4px 0 0;
+}
+
+.chart-plot-background {
+    -fx-background-color: #ffffff;
+}
+
+.axis {
+    -fx-tick-label-fill: #64748b;
+    -fx-font-size: 11px;
+}
+
+.axis-label {
+    -fx-text-fill: #334155;
+    -fx-font-weight: bold;
+}
